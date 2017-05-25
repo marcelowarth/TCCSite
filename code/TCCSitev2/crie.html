@@ -14,13 +14,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Desktop.json", {onProgress: UnityProgress});
-    </script>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
 
@@ -38,21 +31,25 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="projeto.html">Projeto</a></li>
+            <li><a href="projeto.html">Projeto</a></li>
             <li><a href="pesquisa.html">Pesquisa</a></li>
-            <li><a href="crie.html">Crie</a></li>
+            <li class="active"><a href="crie.html">Crie</a></li>
             <li><a href="sobre.html">Sobre</a></li>
           </ul>
         </div>
       </div>
 
       <div class="conteudo">
-        <div class="webgl-content">
-          <div id="gameContainer" style="width: 960px; height: 600px"></div>
-          <div class="footer">
-            <div class="webgl-logo"></div>
-          </div>
-        </div>
+        <p>Esta é uma área em construção!</p>
+        <!-- <p>É possível criar o desafio, porém o arquivo ainda não é possível ser carregado no projeto.</p> -->
+        <p>Esta página tem como objetivo, que usuários possam criar desafios para outros, ou professores criarem desafios para seus alunos.</p>
+
+        <form>
+          Descrição:<br>
+          <input type="text" name="firstname"><br>
+          Last name:<br>
+          <input type="text" name="lastname">
+        </form>
       </div>
 
     </nav>
