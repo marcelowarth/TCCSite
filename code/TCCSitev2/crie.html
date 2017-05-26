@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <title>TCCSite</title>
+<head>
+  <meta charset="utf-8">
+  <title>TCCSite</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-  </head>
+  <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+</head>
 
-  <body>
-    <nav class="container">
-      <div class="navbar navbar-inverse">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">TCC Marcelo Moura</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projeto.html">Projeto</a></li>
-            <li><a href="pesquisa.html">Pesquisa</a></li>
-            <li class="active"><a href="crie.html">Crie</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-          </ul>
-        </div>
+<body>
+  <nav class="container">
+    <div class="navbar navbar-inverse">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">TCC Marcelo Moura</a>
       </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projeto.html">Projeto</a></li>
+          <li><a href="pesquisa.html">Pesquisa</a></li>
+          <li class="active"><a href="crie.html">Crie</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </div>
 
-      <div class="conteudo">
-        <p><span class="glyphicon glyphicon-warning-sign" style="color:red"></span> Esta é uma área em construção! <span class="glyphicon glyphicon-warning-sign" style="color:red"></span></p>
-        <!-- <p>É possível criar o desafio, porém o arquivo ainda não é possível ser carregado no projeto.</p> -->
-        <p>Esta página tem como objetivo, que usuários possam criar desafios para outros, ou professores criarem desafios para seus alunos.</p>
+    <div class="conteudo">
+      <p><span class="glyphicon glyphicon-warning-sign" style="color:red"></span> Esta é uma área em construção! <span class="glyphicon glyphicon-warning-sign" style="color:red"></span></p>
+      <!-- <p>É possível criar o desafio, porém o arquivo ainda não é possível ser carregado no projeto.</p> -->
+      <p>Esta página tem como objetivo, que usuários possam criar desafios para outros, ou professores criarem desafios para seus alunos.</p>
 
-        <hr />
+      <hr />
+
+      <div class="col-md-6 barra">
 
         <form id="dataXML">
           <div class="form-group">
@@ -87,7 +89,8 @@
           </div>
         </form>
 
-        <hr />
+      </div>
+      <div class="col-md-6">
 
         <p>Por favor, prove que o desafio que criaste é possível.</p>
 
@@ -103,19 +106,20 @@
               <button name="removeCommand" class="btn btn-default"><span class="glyphicon glyphicon-minus" style="color:red"></span></button>
             </div>
           </div>
-          <button name="testSolution" class="btn btn-default">Testar Solução</button>
         </form>
+        <button name="testSolution" class="btn btn-default">Testar Desafio</button>
       </div>
+    </div>
 
-    </nav>
-  </body>
+  </nav>
+</body>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="createXML.js"></script>
+<script type="text/javascript" src="createXML.js"></script>
 
 </html>
