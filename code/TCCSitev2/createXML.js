@@ -47,7 +47,7 @@ $(function() {
                           .append($('<option>', {'value': 'ifNeg'}).text("Se negativo"))
                           .append($('<option>', {'value': 'bumpUp'}).text("Aumente"))
                           .append($('<option>', {'value': 'bumpUp'}).text("Diminua")))
-                        .append($('<input>').addClass('form-control').attr('type', 'number').attr('min', 1).attr('max', 8).attr('value', 1).attr('disabled', true));
+                        .append($('<input>').addClass('form-control').attr('type', 'number').attr('min', 1).attr('value', 1).attr('disabled', true));
     numComandos++;
     $('div[name=commands]').append($comando);
   });
