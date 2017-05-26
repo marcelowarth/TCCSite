@@ -11,9 +11,6 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
   </head>
 
@@ -40,19 +37,85 @@
       </div>
 
       <div class="conteudo">
-        <p>Esta é uma área em construção!</p>
+        <p><span class="glyphicon glyphicon-warning-sign" style="color:red"></span> Esta é uma área em construção! <span class="glyphicon glyphicon-warning-sign" style="color:red"></span></p>
         <!-- <p>É possível criar o desafio, porém o arquivo ainda não é possível ser carregado no projeto.</p> -->
         <p>Esta página tem como objetivo, que usuários possam criar desafios para outros, ou professores criarem desafios para seus alunos.</p>
 
-        <form>
-          Descrição:<br>
-          <input type="text" name="firstname"><br>
-          Last name:<br>
-          <input type="text" name="lastname">
+        <hr />
+
+        <form id="dataXML">
+          <div class="form-group">
+            <label for="stageDescription">Descrição do Desafio</label>
+            <textarea class="form-control" rows="5" id="stageDescription"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Valores de Entrada</label>
+            <div class="form-group form-inline">
+              <div name="inputValues">
+              </div>
+              <button name="addInput"class="btn btn-default"><span class="glyphicon glyphicon-plus" style="color:green"></span></button>
+              <button name="removeInput"class="btn btn-default"><span class="glyphicon glyphicon-minus" style="color:red"></span></button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Valores de Saída</label>
+            <div class="form-group form-inline">
+              <div name="outputValues">
+              </div>
+              <button name="addOutput"class="btn btn-default"><span class="glyphicon glyphicon-plus" style="color:green"></span></button>
+              <button name="removeOutput"class="btn btn-default"><span class="glyphicon glyphicon-minus" style="color:red"></span></button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Array Central</label>
+            <div class="form-group">
+              <div name="centralArray">
+                <label>Posição 1:<input class="form-control" type="number"></label>
+                <label>Posição 2:<input class="form-control" type="number"></label>
+                <label>Posição 3:<input class="form-control" type="number"></label>
+                <label>Posição 4:<input class="form-control" type="number"></label>
+                <label>Posição 5:<input class="form-control" type="number"></label>
+                <label>Posição 6:<input class="form-control" type="number"></label>
+                <label>Posição 7:<input class="form-control" type="number"></label>
+                <label>Posição 8:<input class="form-control" type="number"></label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Número de Comandos: </label><p class="form-control-static" name="commandNumber">0</p>
+            <label>Número de Iterações: </label><p class="form-control-static" name="iteractionsNumber">0</p>
+          </div>
+        </form>
+
+        <hr />
+
+        <p>Por favor, prove que o desafio que criaste é possível.</p>
+
+        <form id="solutionXML">
+          <div class="form-group">
+            <label>Comandos</label>
+            <div class="form-group">
+              <div name="commands">
+                <div class="form-inline" name="comando">
+                </div>
+              </div>
+              <button name="addCommand" class="btn btn-default"><span class="glyphicon glyphicon-plus" style="color:green"></span></button>
+              <button name="removeCommand" class="btn btn-default"><span class="glyphicon glyphicon-minus" style="color:red"></span></button>
+            </div>
+          </div>
+          <button name="testSolution" class="btn btn-default">Testar Solução</button>
         </form>
       </div>
 
     </nav>
   </body>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="createXML.js"></script>
 
 </html>

@@ -12,6 +12,7 @@ body {
   padding-bottom: 30px;
   padding-top: 30px;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .navbar-inverse {
@@ -33,6 +34,10 @@ body {
 
 .avisos {
   color: red;
+}
+
+textarea {
+   resize: none;
 }
 
 /*
