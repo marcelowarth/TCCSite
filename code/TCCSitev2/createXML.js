@@ -35,7 +35,7 @@ $(function() {
   $('button[name=addCommand]').click(function() {
     var $comando = $('<div>').attr('name', 'comando').addClass('form-inline')
                       .append($('<label>').text((numComandos + 1) + ". "))
-                        .append($('<select>').addClass('form-control').attr('onchange', 'verifyDisabled(this)').attr('name','selectCommand_' + (numComandos + 1))
+                        .append($('<select>').addClass('form-control').attr('onchange', 'verifyFields(this)').attr('name','selectCommand_' + (numComandos + 1))
                           .append($('<option>', {'value': 'input'}).text("Pegar Entrada"))
                           .append($('<option>', {'value': 'output'}).text("Levar á Saída"))
                           .append($('<option>', {'value': 'add'}).text("Some com"))
@@ -59,11 +59,18 @@ $(function() {
 
 });
 
-function verifyDisabled(objeto) {
+function verifyFields(objeto) {
   var desabilita = ["input", "output"];
+  var max8 = ["add", "sub", "copyTo", "copyFrom", "bumpUp", "bumpDown"];
   if(!(objeto.selectedIndex in desabilita)) {
     objeto.nextSibling.disabled = false;
   } else {
     objeto.nextSibling.disabled = true;
   };
+
+  if(objeto.selectedIndex in max8) {
+    objeto.nextSibling.setAttribute('max', 8);
+  } else {
+      objeto.nextSibling.removeAttribute('max');
+  }
 };
