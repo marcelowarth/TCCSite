@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>TCCSite</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+  <body>
+    <nav class="container">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TCC Marcelo Moura</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projeto.html">Projeto</a></li>
+            <li class="active"><a href="instrucoes.html">Instruções</a></li>
+            <li><a href="pesquisa.html">Pesquisa</a></li>
+            <li><a href="crie.html">Crie</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="conteudo">
+        <p>Esta área serve como instrução de como o app e os comandos funcionam, selecione no menu esquerdo qual dúvida gostaria de tirar.</p>
+        <hr>
+        <div class="row">
+          <div class="col-md-2 barra">
+            <ul>
+              <li><a href="#GeneralInstructions">Instruções gerais</a></li>
+              <li><a href="#Input">Pegar Entrada</a></li>
+              <li><a href="#Output">Levar á Saída</a></li>
+              <li><a href="#JumpTo">Pular para</a></li>
+              <li><a href="#CopyTo">Copiar para</a></li>
+              <li><a href="#CopyFrom">Copiar de</a></li>
+              <li><a href="#Add">Somar com</a></li>
+              <li><a href="#Sub">Diminuir com</a></li>
+              <li><a href="#IfZero">Se zero</a></li>
+              <li><a href="#IfNegative">Se Negativo</a></li>
+              <li><a href="#BumpUp">Aumente</a></li>
+              <li><a href="#BumpDown">Diminua</a></li>
+            </ul>
+          </div>
+          <div class="col-md-10">
+            <div id="GeneralInstructions">
+              <h2>Instruções Gerais</h2>
+              <p>
+                Quando um desafio for selecionado, aparecerá a tela de resolução do desafio, esta tela, sempre inicia com uma caixa de diálogo na parte superior da mesma. Se a caixa sumir, clique no auto-falante para que a mesma apareça novamente.
+              </p>
+              <img src="img/tela_jogo.jpg" class="imageWidth">
+              <p>
+                Para adicionar comandos para o personagem seguir, arraste o comando da lista na esquerda para a área verde a direita. E para remover só arraste para fora da área verde. Os comandos podem ser reorganizados arrastando-os dentro da área verde.
+              </p>
+              <img src="img/arrastar.jpg" class="imageHeight">
+            </div>
+            <hr>
+            <div id="Input">
+              <h2>Pegar Entrada</h2>
+              <p>
+                O comando Pegar Entada, quando executado irá até a esteira superior e pegará o primeiro item da mesma, removendo da esteira e segurando sobre a cabeça.
+              </p>
+              <img src="img/pegarEntrada.jpg" class="imageHeight">
+            </div>
+            <hr>
+            <div id="Output">
+              <h2>Levar á Saída</h2>
+              <p>
+                O comando Levar á Saída, quando executado irá levar a esteira inferior o item que o personagem estiver segurando, removendo o mesmo das mãos do personagem.
+              </p>
+              <img src="img/levarSaida.jpg" class="imageHeight">
+            </div>
+            <hr>
+            <div id="JumpTo">
+              <h2>Pular para</h2>
+              <p>
+                O comando Pular para serve para que o usuário possa criar loops de comando ou pular sequências de comando. Quando adicionado, são criados 2 blocos, um indicando o momento em que será pulado e outro com uma letra indicadora para onde será pulado. No exemplos abaixo foi criado um loop, e no outro foi pulado uma sequência de comandos.
+              </p>
+              <img src="img/pularPara1.jpg" class="imageHeight">
+              <img src="img/pularPara2.jpg" class="imageHeight">
+            </div>
+            <hr>
+            <div id="CopyTo">
+              <h2>Copiar para</h2>
+              <p>
+                O comando Copiar para, serve para armazenar o valor que está sendo segurado pelo personagem em uma posição no centro da tela, será criada uma cópia do valor naquela posição e o personagem continuará com o item na cabeça. Quando o comando for adicionado na área verde, será necessário selecionar uma das 8 áreas destacadas em verde no centro da tela.
+              </p>
+              <img src="img/copiarPara.jpg" class="imageHeight">
+            </div>
+            <hr>
+            <div id="CopyFrom">
+              <h2>Copiar de</h2>
+              <p>
+                O comando Copiar de, tem o mesmo funcionamento do <strong>Copiar para</strong>, porém o que ele fará é buscar o item que existe na posição do centro da tela, isto não removerá o item ali presente, somente criará uma cópia sobre a cabeça do personagem.
+              </p>
+            </div>
+            <hr>
+            <div id="Add">
+              <h2>Somar com</h2>
+              <p>
+                O comando Somar com é utilizado para somar o item que o personagem está segurando com o item de uma das posições do centro da tela, quando utilizado, o item que o personagem está segurando será substituido pelo item com novo valor.
+              </p>
+            </div>
+            <hr>
+            <div id="Sub">
+              <h2>Diminuir com</h2>
+              <p>
+                O comando Diminuir com é utilizado para diminuir o item que o personagem está segurando com o item de uma das posições do centro da tela, quando utilizado, o item que o personagem está segurando será substituido pelo item com novo valor.
+              </p>
+            </div>
+            <hr>
+            <div id="IfZero">
+              <h2>Se Zero</h2>
+              <p>
+                O comando Se Zero possui o mesmo fucionamento do comando <strong>Pular para</strong>, porém ele somente irá pular para a posição designada se o item segurado pelo personagem for zero, ser não for, será executado o próximo comando da sequência. Abaixo um exemplo onde o é verificado se o item pego é zero e levado a saída, se não for volta para o início.
+              </p>
+              <img src="img/ifZero.jpg" class="imageHeight">
+            </div>
+            <hr>
+            <div id="IfNegative">
+              <h2>Se Negativo</h2>
+              <p>
+                O comando Se Negativo possui o mesmo fucionamento dos comandos <strong>Pular para</strong> e <strong>Se Zero</strong>, porém ele somente irá pular para a posição designada se o item segurado pelo personagem for negativo, ser não for, será executado o próximo comando da sequência.
+              </p>
+            </div>
+            <hr>
+            <div id="BumpUp">
+              <h2>Aumente</h2>
+              <p>
+                O comando Aumente serve para aumentar em 1 o valor de um item de uma das posições centrais da tela, quando o mesmo é adicionado na área verde, é necessário que seja selecionada a posição na área central.
+              </p>
+            </div>
+            <hr>
+            <div id="BumpDown">
+              <h2>Diminua</h2>
+              <p>
+                O comando Diminua serve para diminuir em 1 o valor de um item de uma das posições centrais da tela, quando o mesmo é adicionado na área verde, é necessário que seja selecionada a posição na área central.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </body>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</html>
